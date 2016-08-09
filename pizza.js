@@ -76,7 +76,7 @@ var FruitPunch = function() {
 FruitPunch.prototype = new Beverage()
 
 //Let's make an order
-var myOrder = new Order()
+var myOrder = new Order() //when you use the keyword new - the execution context becomes the new object being created
 var myBeverage = new FruitPunch()
 var spicyPepperoni = new Pepperoni()
 spicyPepperoni.makeSpicy() //Makes the pepperoni spicy
@@ -91,8 +91,6 @@ console.log("my Pizza so far", myPizza)
 myOrder.pizza = myPizza
 myOrder.beverage = myBeverage
 console.log("my Order so far", myOrder)
-
-
 
 
 // var myToppings = [spicyPepperoni, dirtyFungus]
